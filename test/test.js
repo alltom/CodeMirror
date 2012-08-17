@@ -397,7 +397,7 @@ testCM("doubleScrollbar", function(cm) {
   cm.setSize(null, 100);
   addDoc(cm, 1, 300);
   var wrap = cm.getWrapperElement();
-  is(wrap.offsetWidth - byClassName(wrap, "CodeMirror-lines")[0].offsetWidth <= scrollbarWidth);
+  is(wrap.offsetWidth - byClassName(wrap, "CodeMirror-lines")[0].offsetWidth <= scrollbarWidth + 1);
 });
 
 testCM("weirdLinebreaks", function(cm) {
